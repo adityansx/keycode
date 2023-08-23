@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>KeyCode Mini</title>
+		<link
+			rel="stylesheet"
+			href="style.css"
+		/>
+	</head>
+	<body>
+		<nav class="navbar bg-primary">
+			<span class="navbar-brand text-light">KeyCode Mini</span>
+			<span class="dark-mode-label">Dark Mode</span>
+			<input
+				type="checkbox"
+				id="switch"
+			/><label for="switch">Toggle</label>
+		</nav>
+		<h2
+			class="text-center"
+			id="page-heading"
+		>
+			JavaScript Key Code
+		</h2>
+		<div class="pre-event-card">
+			<span>Press any key to get the JavaScript event keycode info</span>
+		</div>
+		<main
+			class="container"
+			style="display: none"
+		>
+			<div
+				class="text-center"
+				id="hero-text"
+			>
+				17
+			</div>
+			<div class="keycode-information">
+				<p class="text-center">Key Code Information</p>
+			</div>
+			<div class="wrapper">
+				<div class="card">
+					<div class="card-title text-center">event.key</div>
+					<p
+						class="card-text"
+						id="event-key"
+					></p>
+				</div>
+				<div class="card">
+					<div class="card-title text-center">event.location</div>
+					<p
+						class="card-text"
+						id="event-location"
+					></p>
+				</div>
+				<div class="card">
+					<div class="card-title text-center">event.code</div>
+					<p
+						class="card-text"
+						id="event-code"
+					></p>
+				</div>
+				<div class="card">
+					<div class="card-title text-center">event.which</div>
+					<p
+						class="card-text"
+						id="event-which"
+					></p>
+				</div>
+				<div class="card">
+					<div class="card-title text-center">event.description</div>
+					<p
+						class="card-text"
+						id="event-description"
+					></p>
+				</div>
+				<div class="card">
+					<div class="card-title text-center">Meta Keys</div>
+					<div class="card-text">
+						<div class="meta-keys-card_content">
+							<div class="meta-keys-card_meta-key">
+								<span>⌘</span>
+							</div>
+							<div class="meta-keys-card_meta-key">
+								<span>⇧</span>
+							</div>
+							<div class="meta-keys-card_meta-key">
+								<span>⌥</span>
+							</div>
+							<div class="meta-keys-card_meta-key">
+								<span>^</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-title text-center">Event Dump</div>
+					<pre
+						class="card-text"
+						id="event-dump"
+					></pre>
+				</div>
+				<div class="card">
+					<div class="card-title text-center">Similar Values</div>
+					<p
+						class="card-text"
+						id="similar-values"
+					></p>
+				</div>
+				<div class="card">
+					<div class="card-title text-center">Unicode</div>
+					<p
+						class="card-text"
+						id="unicode"
+					></p>
+				</div>
+				<div class="card">
+					<div class="card-title text-center">History</div>
+					<div class="card-text">
+						<div class="history-card_content"></div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<script
+			type="module"
+			src="script.js"
+		></script>
+	</body>
+</html>
